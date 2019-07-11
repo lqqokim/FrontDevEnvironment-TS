@@ -1,12 +1,25 @@
 {
-  "name": "ts-mocha",
+  "name": "ts-webpack-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "transpile":"tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.35.3"
   },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "tslint-loader": "^3.5.4",
+    "webpack-cli": "^3.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "devserver": "webpack-dev-server --open --progress"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC"
 }
