@@ -10,7 +10,9 @@
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
     "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
     "tslint": "^5.18.0",
     "tslint-loader": "^3.5.4",
     "typescript": "^3.5.3",
@@ -18,10 +20,9 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --content-base dist/ --open",
-    "devserver": "webpack-dev-server --open --progress"
+    "dev": "webpack-dev-server --inline --progress --config webpack.base.conf.js",
+    "build": "webpack --config webpack.prod.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

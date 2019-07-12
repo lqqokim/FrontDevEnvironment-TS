@@ -1,5 +1,5 @@
-import { Member } from "./member/Member";
+import './style.css';
+import { Profile } from './profile/profile';
 
-const o = new Member("Tony", 20);
-// console.log("이름: ", o.getName);
-// console.log("나이: ", o.getAge);
+const pf = new Profile('insu', 'kis4204@douzone.com');
+console.log(pf.hello());
