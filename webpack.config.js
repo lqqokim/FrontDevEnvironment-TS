@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-    // mode: 'development',
+    mode: 'development',
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -13,7 +13,7 @@ const config = {
             { test: /\.css$/, use: 'css-loader' },
             { test: /\.ts$/, use: 'awesome-typescript-loader' },
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
-            { enforce: 'pre', test: /\.ts$/, loader: 'tslint-loader' }
+            // { enforce: 'pre', test: /\.ts$/, loader: 'tslint-loader' }
         ]
     },
     plugins: [

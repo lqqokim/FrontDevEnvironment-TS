@@ -1,3 +1,6 @@
 import { Kanban } from './kanban/Kanban';
 
-console.log('success');
+window.onload = function () {
+    var o = new Kanban();
+    o.show();
+}
