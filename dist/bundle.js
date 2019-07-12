@@ -94,19 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Kanban_1 = __webpack_require__(/*! ./kanban/Kanban */ \"./src/kanban/Kanban.ts\");\nwindow.onload = function () {\n    var o = new Kanban_1.Kanban();\n    o.show();\n};\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Member_1 = __webpack_require__(/*! ./member/Member */ \"./src/member/Member.ts\");\nvar o = new Member_1.Member(\"Tony\", 20);\n// console.log(\"이름: \", o.getName);\n// console.log(\"나이: \", o.getAge);\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ }),
 
-/***/ "./src/kanban/Kanban.ts":
+/***/ "./src/member/Member.ts":
 /*!******************************!*\
-  !*** ./src/kanban/Kanban.ts ***!
+  !*** ./src/member/Member.ts ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Kanban = /** @class */ (function () {\n    function Kanban() {\n    }\n    Kanban.prototype.show = function () {\n        console.log(\"Build Success!\");\n    };\n    return Kanban;\n}());\nexports.Kanban = Kanban;\n\n\n//# sourceURL=webpack:///./src/kanban/Kanban.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Member = /** @class */ (function () {\n    function Member(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n    Member.prototype.getName = function () {\n        return this.name;\n    };\n    Member.prototype.getAge = function () {\n        return this.age;\n    };\n    return Member;\n}());\nexports.Member = Member;\n\n\n//# sourceURL=webpack:///./src/member/Member.ts?");
 
 /***/ })
 

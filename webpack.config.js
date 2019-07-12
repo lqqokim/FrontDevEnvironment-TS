@@ -10,10 +10,10 @@ const config = {
     },
     module: {
         rules: [
-            { test: /\.css$/, use: 'css-loader' },
-            { test: /\.ts$/, use: 'awesome-typescript-loader' },
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
-            // { enforce: 'pre', test: /\.ts$/, loader: 'tslint-loader' }
+            { test: /\.css$/, loader: 'css-loader' },
+            { test: /\.ts$/, loader: 'awesome-typescript-loader' },
+            { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
+            { enforce: 'pre', test: /\.ts$/, loader: 'tslint-loader' }
         ]
     },
     plugins: [

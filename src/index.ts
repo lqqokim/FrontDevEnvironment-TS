@@ -1,6 +1,5 @@
-import { Kanban } from './kanban/Kanban';
+import { Member } from "./member/Member";
 
-window.onload = function () {
-    var o = new Kanban();
-    o.show();
-}
+const o = new Member("Tony", 20);
+// console.log("이름: ", o.getName);
+// console.log("나이: ", o.getAge);
