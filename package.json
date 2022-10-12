@@ -17,7 +17,7 @@
     "tslint-loader": "^3.5.4",
     "typescript": "^3.5.3",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.11.3"
   },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config webpack.base.conf.js",
